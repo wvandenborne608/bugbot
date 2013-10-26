@@ -16,3 +16,6 @@ Usage:
 Demo:
 - http://gdriv.es/beetlebot
 
+Extra info:
+- I haven't added any browser detection yet, so it doesn't work, try Chrome or FireFox.
+- It tries to determine and scale the application to the available screen size. 
