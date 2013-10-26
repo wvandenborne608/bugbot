@@ -1,0 +1,287 @@
+/* ==========================================================================
+   Main DOM element styling
+   ========================================================================== */
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display:none;
+  width:91em;
+}
+
+#leftCol{
+  text-align: center;
+  width: 15em;
+  float: left;
+}
+
+#mainCol{
+  text-align: center;
+  width: 61em;
+  margin-left: 1em;
+  float: left;
+}
+
+#rightCol{
+  text-align: center;
+  width: 15em;
+  float:right;
+}
+
+#sheet {
+  position:relative;
+  margin:0 auto;
+  background-repeat:no-repeat;
+  background-size: 100% auto;
+}
+
+
+/* ==========================================================================
+   Sheet selector styling (right column)
+   ========================================================================== */
+#sheetSelector {
+  overflow-y:auto;
+  overflow-x:hidden;
+  max-height:50em;
+}
+ 
+.sheetSelectorThumb {
+  width:6.6em;
+  height:6.6em;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+}
+
+
+/* ==========================================================================
+   Bugbot's body and it's ghost brother (The transparent body used for dragging)
+   ========================================================================== */
+#bot {
+  position:absolute;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
+  -moz-transition: all 1s ease-in-out; /** Firefox **/
+  -o-transition: all 1s ease-in-out; /** Opera **/
+  width:10em;
+  height:10em;
+  background: url("../img/bug1body.png");
+  background-size: 100% auto;
+  background-repeat:no-repeat;
+}
+
+#botGhost {
+  position:absolute;
+  width:10em;
+  height:10em;
+  background: url("../img/bug1body.png");
+  background-size: 100% auto;
+  background-repeat:no-repeat;
+  display:none;
+}
+
+
+/* ==========================================================================
+   BugBot's control buttons
+   ========================================================================== */
+.botControls {
+  position:relative;
+}
+
+.control_grableft {
+  position: absolute; top:0.7em; left:0.4em; width: 3em; height: 3em;
+} 
+
+.control_grabright {
+  position: absolute; top:0.7em; left:6.6em; width: 3em; height: 3em;
+} 
+
+.control_forward {
+  position: absolute; top:0.7em; left:3.5em; width: 3em; height: 3em;
+  background: url("../img/control_upward.png");
+  background-size: 100% auto; background-repeat:no-repeat;
+} 
+
+.control_backward {
+  position: absolute; top:6.6em; left:3.5em; width: 3em; height: 3em;
+  background: url("../img/control_backward.png");
+  background-size: 100% auto; background-repeat:no-repeat;
+} 
+
+.control_left {
+  position: absolute; top:3.7em; left:0.4em; width: 3em; height: 3em;
+  background: url("../img/control_left.png");
+  background-size: 100% auto; background-repeat:no-repeat;
+} 
+
+.control_right {
+  position: absolute; top:3.7em; left:6.6em; width: 3em; height: 3em;
+  background: url("../img/control_right.png");
+  background-size: 100% auto; background-repeat:no-repeat;
+}
+
+.control_go {
+  position: absolute; top:3.7em; left:3.5em; width: 3em; height: 3em;
+  background: url("../img/control_go.png");
+  background-size: 100% auto; background-repeat:no-repeat;
+}
+.control_clear {
+  position: absolute; top:6.6em; left:0.4em; width: 3em; height: 3em;
+  background: url("../img/control_clear.png");
+  background-size: 100% auto; background-repeat:no-repeat;
+}
+.control_pause {
+  position: absolute; top:6.6em; left:6.6em; width: 3em; height: 3em;
+  background: url("../img/control_pause.png"); 
+  background-size: 100% auto; background-repeat:no-repeat;
+}
+
+.control_forward:active {
+  top:0.8em; left:3.6em;
+  background-size:2.8em 2.8em; background-repeat:no-repeat;
+} 
+
+.control_backward:active {
+  top:6.7em; left:3.6em;
+  background-size:2.8em 2.8em; background-repeat:no-repeat;
+} 
+
+.control_left:active {
+  top:3.8em;  left:0.5em;
+  background-size:2.8em 2.8em; background-repeat:no-repeat;
+} 
+
+.control_right:active {
+  top:3.8em; left:6.7em;
+  background-size:2.8em 2.8em; background-repeat:no-repeat;
+}
+.control_go:active {
+  top:3.8em; left:3.6em;
+  background-size:2.8em 2.8em; background-repeat:no-repeat;
+}
+.control_clear:active {
+  top:6.7em; left:0.5em;
+  background-size:2.8em 2.8em; background-repeat:no-repeat;
+}
+.control_pause:active {
+  top:6.7em; left:6.7em;
+  background-size:2.8em 2.8em; background-repeat:no-repeat;
+}
+
+
+/* ==========================================================================
+   Action list (left column) styling
+   ========================================================================== */
+#actionsList {
+  margin-top: 1.0em;
+  overflow-y:auto;
+  overflow-x:hidden;
+  max-height:46.0em;
+}
+
+.actionItemInList {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-top: 0.5em;
+}
+
+.actionList_upward {
+  display: block;
+  width: 3em; height: 3em;
+  background: url("../img/control_upward.png");
+  background-size: 100% auto; background-repeat:no-repeat;
+}
+
+.actionList_backward {
+  display: block;
+  width: 3em; height: 3em;
+  background: url("../img/control_backward.png");
+  background-size: 100% auto; background-repeat:no-repeat;
+}
+
+.actionList_left {
+  width: 3em; height: 3em;
+  background: url("../img/control_left.png");
+  background-size: 100% auto; background-repeat:no-repeat;
+}
+
+.actionList_right {
+  width: 3em; height: 3em;
+  background: url("../img/control_right.png");
+  background-size: 100% auto; background-repeat:no-repeat;
+}
+
+
+/* ==========================================================================
+   Some various styling and/or animation effects
+   ========================================================================== */
+#loader {
+  position:relative;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6.4em;
+  height: 6.4em;
+  background-repeat:no-repeat;
+  background: url("../img/loading-icon.gif");
+  background-size: 100% auto;
+}
+
+.shadow_select {
+  -webkit-box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.shadow_select:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.075), 0 0 0.8em rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.075), 0 0 0.8em rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.075), 0 0 0.8em rgba(82, 168, 236, 0.6);
+  outline: 0;
+  outline: thin dotted \9;
+}
+
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes pulse {
+  0% { -webkit-transform: scale(1); }	
+  50% { -webkit-transform: scale(1.1); }
+  100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+  0% { -moz-transform: scale(1); }	
+  50% { -moz-transform: scale(1.1); }
+  100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+  0% { -o-transform: scale(1); }	
+  50% { -o-transform: scale(1.1); }
+  100% { -o-transform: scale(1); }
+}
+@keyframes pulse {
+  0% { transform: scale(1); }	
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -o-animation-name: pulse;
+  animation-name: pulse;
+}
+
+

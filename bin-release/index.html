@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+	
+	<div id="loader"></div>
+
+        <div id="container">
+		<div class="row">
+        		<div id="leftCol">
+				<span class="thumbnail">
+					<a id="sheetRefresh"class="btn" href="#"><i class="icon-refresh"></i> Reset</a>
+					<div id="actionsList"></div>
+				</span>
+			</div>
+        		<div id="mainCol">
+				<span class="thumbnail">
+					<div id="sheet">
+						<div id="bot" class="bot">
+						      <div class="botControls">
+							<span data-action="left"	class="drag control_grableft"></span>
+							<span data-action="right"       class="drag control_grabright"></span>
+							<span data-action="go"    	class="action control_go"></span>
+							<span data-action="pause"	class="action control_pause"></span>
+							<span data-action="clear" 	class="action control_clear"></span>
+							<span data-action="forward"     class="action control_forward"></span>
+							<span data-action="right" 	class="action control_right"></span>
+							<span data-action="backward"    class="action control_backward"></span>
+							<span data-action="left" 	class="action control_left"></span>
+						       </div>
+						</div>
+						<div id="botGhost"></div>
+					</div>
+				</span>
+			</div>
+        		<div id="rightCol">
+				<span class="thumbnail">
+					<div id="sheetSelector"></div>
+				</span>
+			</div>
+      		</div>
+        </div>
+
+
+        <script src="js/vendor/jquery-1.10.1.min.js"></script>
+        <script src="js/vendor/jquery-ui.js"></script>
+        <script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/helper.js"></script>
+        <script src="js/main.js"></script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38548279-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+    </body>
+</html>
