@@ -46,10 +46,10 @@ activity.bugbot = (function() {
   this.addAction = function(action) {
     this.actions.push(action);
     switch ( action ) {
-      case "forward"   : $( '<div class="actionList_upward actionItemInList"></div>' ).appendTo("#actionsList").css({'opacity':0}).animate({'opacity':1}); break;
-      case "backward"   : $( '<div class="actionList_backward actionItemInList"></div>' ).appendTo("#actionsList").css({'opacity':0}).animate({'opacity':1}); break;
-      case "left"   : $( '<div class="actionList_left actionItemInList"></div>' ).appendTo("#actionsList").css({'opacity':0}).animate({'opacity':1}); break;
-      case "right"   : $( '<div class="actionList_right actionItemInList"></div>' ).appendTo("#actionsList").css({'opacity':0}).animate({'opacity':1}); break;
+      case "forward"   : $( '<div class="actionList_upward actionItemInList"></div>' ).prependTo("#actionsList").css({'opacity':0}).animate({'opacity':1}); break;
+      case "backward"   : $( '<div class="actionList_backward actionItemInList"></div>' ).prependTo("#actionsList").css({'opacity':0}).animate({'opacity':1}); break;
+      case "left"   : $( '<div class="actionList_left actionItemInList"></div>' ).prependTo("#actionsList").css({'opacity':0}).animate({'opacity':1}); break;
+      case "right"   : $( '<div class="actionList_right actionItemInList"></div>' ).prependTo("#actionsList").css({'opacity':0}).animate({'opacity':1}); break;
     }
   }
 
